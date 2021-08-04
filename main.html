@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+        <style>
+            html{
+                font-family: arial,sans-serif;
+                list-style: none;
+            }
+            
+        ul{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 5px 0px;
+        }
+        a{
+            display: flex;
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+            margin-right: 1rem;
+            font-size: 13px;
+            color:rgba(0,0,0,0.87);
+        }
+        #hover-underline:hover{
+            text-decoration: underline;
+        }
+        #app{
+            transform: scale(1.2);
+            margin-top: 5px;
+            margin-left: -3px;
+        }
+        #acc-logo{
+            height: 32px;
+            width: auto;
+            border: 4px solid transparent;
+            border-radius: 50%;
+        }
+        #acc-logo:hover{
+            border: 4px solid rgb(238, 237, 237);
+            border-radius: 50%;
+        }
+        .google-containter{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;
+            width: 100%;
+        }
+        
+        input{
+            width: 25rem;
+            border: none;
+            border-radius: 22px;
+            background-color: transparent;
+            width: 88%;
+            height: 70%;
+            font-size: 16px;
+        }
+        input:focus{
+            outline: none;
+        }
+        .bar{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-style: solid !important; 
+            border: 1px rgb(226, 226, 226);
+            border-radius: 30px;
+            width: 582px;
+            height: 44px;
+            margin: 23px;
+        }
+        .material-icons{
+            color: #9aa0a6;
+            transform: scale(0.8333);
+            margin-left: 0.7rem;
+            margin-right: 1rem;
+        }
+        .search-buttons > *{
+            outline:0;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 14px;
+            border: 1px solid #f8f9fa;
+            background-color: #f8f9fa;
+            color: #3c4043;
+            border-radius: 4px;
+            margin: 5px;
+        }
+        .search-buttons > *:hover, .bar:hover{
+            box-shadow: 0px 1px 3px #c0c0c0;
+        }
+        footer{
+            display: flex;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-evenly; 
+            flex-wrap: wrap;  
+            background-color: #ebebeb;    
+        }
+        footer a{
+            color: rgba(0,0,0,.54);
+            padding: 15px 15px;
+            font-size: 15px;
+        }
+        #left{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        #right{
+            display: flex;
+            justify-content: right;
+            width: 40%;
+        }
+        </style>
+        </head>
+    <nav>
+        <ul>
+            <li><a id="hover-underline" href="https://mail.google.com/">Gmail</a></li>
+            <li><a id="hover-underline" href="https://www.google.com/imghp">Images</a></li>
+            <li><div id="app"><span class="material-icons">apps</span>                </div></li>
+            <li><a href="https://accounts.google.com/"><img id="acc-logo" src="https://freepngimg.com/thumb/google/66726-customer-account-google-service-button-search-logo.png" alt="Google Accounts logo"></a></li>
+        </ul>
+    </nav>
+    <body>
+        <div class="google-containter">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+            <div class="bar">
+                <span class="material-icons">
+                    search
+                    </span>
+                <input id="search" type="search" name="q">
+            </div>
+            <div class="search-buttons">
+                <button type="button">Google Search</button> 
+                <button type="button">I'm Feeling Lucky</button> 
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div id="left">
+            <li><a id="hover-underline" href="https://about.google">About</a></li>
+            <li><a id="hover-underline" href="https://ads.google.com">Advertising</a></li>
+            <li><a id="hover-underline" href="https://www.google.com/services">Business</a></li>
+            <li><a id="hover-underline" href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a></li>
+        </div>
+        <div id="right">
+            <li><a id="hover-underline" href="https://policies.google.com">Privacy</a></li>
+            <li><a id="hover-underline" href="https://policies.google.com">Terms</a></li>
+            <li><a id="hover-underline" href="https://www.google.com/">Settings</a></li>
+        </div>
+    </footer>
+</html>
